@@ -6,7 +6,7 @@ Today, we're going to create a popup Chrome extension that generates random punn
 
 ## Instruction
 
-### Init Project
+### Init Project 🚀
 
 You can start with me by using my template [here](https://github.com/photkosee/vite-react-ts-tailwind-template). This template will initialize a React, Vite, and Tailwind CSS project for you. Once you've cloned the template, navigate to the root directory and run the following command to install all dependencies:
 
@@ -14,7 +14,7 @@ You can start with me by using my template [here](https://github.com/photkosee/v
 npm install
 ```
 
-### Create the Manifest File
+### Create the Manifest File 💡
 
 Once you have your React project set up, you'll need to create a file named `manifest.json` inside `public` folder at the root directory of your project. Inside the file, put this code in:
 
@@ -40,7 +40,7 @@ As of today (September 2024), the latest version for a manifest file is 3. Make 
 
 Note that WebP and SVG files are not supported as icon formats, but you'll still be able to create your extension as long as you don't leave the key value blank. So, the Vite icon here will not be displayed as your icon — I only included it to avoid getting an error. Feel free to use whatever image you like. Check out more details regarding the `icons` key [here](https://developer.chrome.com/docs/extensions/reference/manifest/icons).
 
-### Prepare our popup
+### Prepare our popup ⚙️
 
 Inside `./src/App.tsx`, put this code in it:
 
@@ -84,7 +84,7 @@ The `quote` state will be used to keep track of the quote that we'll generate.
 
 This is simply a box to display the quote and a button to click to generate a new quote.
 
-### Implement Random Quote Generation
+### Implement Random Quote Generation 🎲
 
 For generating random quotes, we'll be using the DummyJSON API. You can find more details about the API [here](https://dummyjson.com/docs/quotes). It simply gives us a random quote whenever we make a request, and it's free! Although the quotes generated are truly random, they may not always be meaningful. This part is just a cherry on top, and you can modify this to build whatever you need for your custom extension.
 
@@ -146,7 +146,7 @@ function App() {
 export default App;
 ```
 
-### Test Your Extension Locally
+### Test Your Extension Locally 🧪
 
 To use your extension locally, first run the following command at the root directory:
 
@@ -156,11 +156,22 @@ npm run build
 
 Then, navigate to the Chrome Extensions Management page (or simply click [here](chrome://extensions/)). Make sure that you enable developer mode in the top right corner. Once enabled, you'll see buttons like `Load unpacked`, `Pack extension`, and `Update` at the top of the page.
 
+![developer-mode](https://github.com/user-attachments/assets/e5bf5505-ee3b-44cd-9e57-cce799a0f467)
+
+
+![load-unpack-btn](https://github.com/user-attachments/assets/8e99343e-b7ba-4b84-a71f-6c97b3b87eba)
+
 Click on the `Load unpacked` button and upload the `dist` folder that is generated from the `build` command at your project's root directory. And you're all set to use your personal extension!
 
 Note that you don't need to remove and upload a new unpacked file every time you make changes to your project. Simply run the same `build` command and click on the refresh button on your extension card to apply those changes. You can see my code here for the final product.
 
-### We're Done!
+![refresh-bth](https://github.com/user-attachments/assets/86615f4d-5f34-4243-a4f5-0157db20b943)
+
+### We're Done! 🙌
+
+It will look something like this once you use the extension that we just implemented:
+
+![popup](https://github.com/user-attachments/assets/a55fcc11-34a6-4213-adbb-b32c0036c13d)
 
 As you can see, creating a Chrome extension is not as difficult as you might have imagined! Now, it’s up to your design and ideas to make great things happen.
 
