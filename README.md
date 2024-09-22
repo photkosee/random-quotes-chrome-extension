@@ -1,4 +1,4 @@
-# How to Create Your Own Chrome Extension with React, Vite, and (optionally) Tailwind CSS (It's Easier Than You Think!)
+# How to Create Your Chrome Extension with React, Vite, and (optionally) Tailwind CSS | Beginner Guide
 
 ## What Will We Do Today?
 
